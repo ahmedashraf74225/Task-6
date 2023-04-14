@@ -1,0 +1,5 @@
+SELECT c.id, c.movie_name, COUNT(r.Id) AS review_count 
+FROM thecamp_cinema c 
+LEFT JOIN thecamp_movies_ratings r 
+ON c.id = r.movie_id 
+GROUP BY c.id;

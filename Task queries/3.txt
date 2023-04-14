@@ -1,0 +1,4 @@
+SELECT c.id, c.movie_name, r.movie_review, r.date 
+FROM thecamp_cinema c 
+JOIN thecamp_movies_ratings r 
+ON c.id = r.movie_id;

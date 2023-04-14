@@ -1,0 +1,7 @@
+create table thecamp_cinema (
+  id INT NOT NULL,
+  movie_name VARCHAR(50) NOT NULL,
+  movie_length INT NOT NULL,
+  movie_director VARCHAR(255) NOT NULL,
+  PRIMARY KEY (id)
+);

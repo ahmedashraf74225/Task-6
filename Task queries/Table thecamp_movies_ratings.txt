@@ -1,0 +1,8 @@
+create table thecamp_movies_ratings (
+  Id INT NOT NULL,
+  movie_id INT NOT NULL,
+  movie_review VARCHAR(255) NOT NULL,
+  date DATE NOT NULL,
+  PRIMARY KEY (Id),
+  FOREIGN KEY (movie_id) REFERENCES thecamp_cinema(id)
+);
